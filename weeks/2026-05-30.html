@@ -1,0 +1,682 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Week of May 30, 2026 -- Weekly Meal Plan</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>  :root{--bg:#F1F0EC;--head:#6C7653;--acc:#C28511;--text:#1a1a1a;--card:#ffffff}  *{box-sizing:border-box}  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}  .wrap{max-width:980px;margin:0 auto;padding:12px 12px 56px}  .sticky{position:sticky;top:0;z-index:20;background:var(--head);box-shadow:0 2px 6px rgba(0,0,0,.12)}  .bar{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:56px;padding:8px 12px}  .title{margin:0;font-size:16px;color:#fff;font-weight:800}  .meta{font-size:12px;color:#fff;opacity:.9}  .btns{display:flex;gap:8px}  button{cursor:pointer}  .btn{background:var(--acc);color:#fff;border:none;border-radius:999px;padding:10px 14px;font-weight:700;min-height:44px}  .btn:focus-visible,.acc:focus-visible{outline:3px solid #fff;outline-offset:2px}  .pill{display:inline-block;background:rgba(194,133,17,.15);color:var(--acc);padding:4px 8px;border-radius:999px;font-size:12px;font-weight:800}  section.card{background:var(--card);border-radius:14px;box-shadow:0 1px 0 rgba(0,0,0,.05);margin:12px 0;border-left:4px solid var(--acc)}  h2{margin:0} h3{margin:0}  .acc{background:none;border:none;display:flex;align-items:center;justify-content:space-between;width:100%;padding:14px;min-height:44px;font:inherit;color:inherit;-webkit-appearance:none;appearance:none;text-align:left}  .acc .label{color:var(--head);font-weight:900;display:flex;align-items:center}  .chev{transition:transform .2s ease;color:var(--head);font-weight:900}  .acc[aria-expanded="true"] .chev{transform:rotate(90deg)}  .panel{padding:0 14px 14px}  ul{margin:8px 0 0 18px} li{margin:4px 0}  .sub{margin:6px 0 8px;color:#333}  .group{margin-top:8px} .group h3{margin:10px 0 4px;font-size:14px;color:var(--head)}  a{color:var(--acc);text-decoration:none}  @media (max-width:420px){.wrap{max-width:100%;padding:12px}}</style></head>
+<body><div class='wrap'>
+<header class="sticky"><div class="bar">
+  <div><div class="title">Rooted Wellness Weekly Meals Plan -- Rachel Stephens Wellness</div>
+  <div class="meta">Week of May 30, 2026 &bull; Focus: Hydration &amp; Electrolytes</div></div>
+  <div class="btns"><button id="resetBtn" class="btn">Reset</button>
+  <button id="dlBtn" class="btn">Download</button></div>
+</div></header>
+<section class="card"><h2>
+  <button type="button" class="acc" id="acc-intro" aria-expanded="true" aria-controls="panel-intro">
+    <span class="label">Intro / Nutrition Focus</span><span class="chev">&#9658;</span>
+  </button></h2>
+  <div id="panel-intro" class="panel">
+    <p class="sub">Week start (ISO): 2026-05-30</p>
+    <p class="sub"><strong>Focus:</strong> <span class="pill">Hydration &amp; Electrolytes</span></p>
+    <p>As the weather warms, this week's meals are built to keep you well-hydrated from the inside out. Plates feature water-rich produce (cucumber, watermelon, citrus, leafy greens, summer squash), naturally mineral-rich foods (avocado, yogurt, leafy greens, sea salt), bone broth, and coconut water. Each recipe is whole-food, home-cook-friendly, and ready in 40 minutes or less.</p>
+  </div>
+</section>
+<section class="card"><h2>
+  <button type="button" class="acc" id="acc-sec-breakfasts" aria-expanded="false" aria-controls="panel-sec-breakfasts">
+    <span class="label">Breakfasts</span><span class="chev">&#9658;</span>
+  </button></h2>
+  <div id="panel-sec-breakfasts" class="panel" hidden>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-1" aria-expanded="false" aria-controls="panel-1">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Cucumber Mint Green Smoothie"
+               data-ings='[&quot;1 cup coconut water&quot;, &quot;0.5 English cucumber&quot;, &quot;2 cups baby spinach&quot;, &quot;0.5 green apple cored&quot;, &quot;0.25 cup fresh mint leaves&quot;, &quot;1 Tbsp lime juice&quot;, &quot;1 Tbsp chia seeds&quot;, &quot;0.5 frozen banana&quot;]'
+               aria-label="Select Cucumber Mint Green Smoothie" style="margin-right:6px">Cucumber Mint Green Smoothie
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-1" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>1 cup coconut water</li><li>0.5 English cucumber</li><li>2 cups baby spinach</li><li>0.5 green apple cored</li><li>0.25 cup fresh mint leaves</li><li>1 Tbsp lime juice</li><li>1 Tbsp chia seeds</li><li>0.5 frozen banana</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Add all ingredients to a blender</li><li>Blend on high for 60 seconds until smooth</li><li>Pour into a glass over ice</li><li>Serve immediately</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-2" aria-expanded="false" aria-controls="panel-2">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Watermelon Feta Yogurt Bowl"
+               data-ings='[&quot;1 cup plain whole-milk Greek yogurt&quot;, &quot;1.5 cups cubed watermelon&quot;, &quot;2 Tbsp crumbled feta&quot;, &quot;2 Tbsp chopped fresh mint&quot;, &quot;1 Tbsp hemp seeds&quot;, &quot;1 tsp lime zest&quot;, &quot;1 tsp honey&quot;]'
+               aria-label="Select Watermelon Feta Yogurt Bowl" style="margin-right:6px">Watermelon Feta Yogurt Bowl
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-2" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>1 cup plain whole-milk Greek yogurt</li><li>1.5 cups cubed watermelon</li><li>2 Tbsp crumbled feta</li><li>2 Tbsp chopped fresh mint</li><li>1 Tbsp hemp seeds</li><li>1 tsp lime zest</li><li>1 tsp honey</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Spoon yogurt into a wide bowl</li><li>Top with watermelon, feta, and mint</li><li>Sprinkle with hemp seeds and lime zest</li><li>Drizzle with honey and serve</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-3" aria-expanded="false" aria-controls="panel-3">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Coconut Water Citrus Chia Pudding"
+               data-ings='[&quot;3 Tbsp chia seeds&quot;, &quot;1 cup coconut water&quot;, &quot;0.25 cup full-fat coconut milk&quot;, &quot;1 tsp vanilla extract&quot;, &quot;1 Tbsp maple syrup&quot;, &quot;0.5 orange segmented&quot;, &quot;2 Tbsp unsweetened coconut flakes&quot;]'
+               aria-label="Select Coconut Water Citrus Chia Pudding" style="margin-right:6px">Coconut Water Citrus Chia Pudding
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-3" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>3 Tbsp chia seeds</li><li>1 cup coconut water</li><li>0.25 cup full-fat coconut milk</li><li>1 tsp vanilla extract</li><li>1 Tbsp maple syrup</li><li>0.5 orange segmented</li><li>2 Tbsp unsweetened coconut flakes</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Whisk chia, coconut water, coconut milk, vanilla, and maple syrup in a jar</li><li>Stir again after 10 minutes to prevent clumping</li><li>Refrigerate at least 4 hours or overnight</li><li>Top with orange segments and coconut flakes before serving</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-4" aria-expanded="false" aria-controls="panel-4">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Kiwi Cucumber Smoothie Bowl"
+               data-ings='[&quot;2 ripe kiwis peeled&quot;, &quot;0.5 cucumber&quot;, &quot;1 frozen banana&quot;, &quot;0.5 cup coconut water&quot;, &quot;0.5 cup plain Greek yogurt&quot;, &quot;2 Tbsp granola&quot;, &quot;1 Tbsp pumpkin seeds&quot;, &quot;1 Tbsp shredded coconut&quot;]'
+               aria-label="Select Kiwi Cucumber Smoothie Bowl" style="margin-right:6px">Kiwi Cucumber Smoothie Bowl
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-4" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>2 ripe kiwis peeled</li><li>0.5 cucumber</li><li>1 frozen banana</li><li>0.5 cup coconut water</li><li>0.5 cup plain Greek yogurt</li><li>2 Tbsp granola</li><li>1 Tbsp pumpkin seeds</li><li>1 Tbsp shredded coconut</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Blend kiwi, cucumber, banana, coconut water, and yogurt until thick</li><li>Pour into a bowl</li><li>Top with granola, pumpkin seeds, and shredded coconut</li><li>Serve immediately</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-5" aria-expanded="false" aria-controls="panel-5">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Cottage Cheese with Berries and Sea Salt"
+               data-ings='[&quot;1 cup full-fat cottage cheese&quot;, &quot;0.5 cup strawberries sliced&quot;, &quot;0.25 cup blueberries&quot;, &quot;2 Tbsp slivered almonds&quot;, &quot;1 Tbsp ground flaxseed&quot;, &quot;1 tsp honey&quot;, &quot;0.25 tsp flaky sea salt&quot;]'
+               aria-label="Select Cottage Cheese with Berries and Sea Salt" style="margin-right:6px">Cottage Cheese with Berries and Sea Salt
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-5" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>1 cup full-fat cottage cheese</li><li>0.5 cup strawberries sliced</li><li>0.25 cup blueberries</li><li>2 Tbsp slivered almonds</li><li>1 Tbsp ground flaxseed</li><li>1 tsp honey</li><li>0.25 tsp flaky sea salt</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Spoon cottage cheese into a bowl</li><li>Top with berries, almonds, and flaxseed</li><li>Drizzle with honey and finish with a small pinch of flaky sea salt</li><li>Serve immediately</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-6" aria-expanded="false" aria-controls="panel-6">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Tomato Avocado Toast with Sea Salt"
+               data-ings='[&quot;2 slices sprouted whole-grain bread&quot;, &quot;1 ripe avocado&quot;, &quot;1 large heirloom tomato sliced&quot;, &quot;2 large eggs&quot;, &quot;1 tsp olive oil&quot;, &quot;1 tsp lemon juice&quot;, &quot;0.25 tsp flaky sea salt&quot;, &quot;cracked pepper to taste&quot;]'
+               aria-label="Select Tomato Avocado Toast with Sea Salt" style="margin-right:6px">Tomato Avocado Toast with Sea Salt
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-6" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>2 slices sprouted whole-grain bread</li><li>1 ripe avocado</li><li>1 large heirloom tomato sliced</li><li>2 large eggs</li><li>1 tsp olive oil</li><li>1 tsp lemon juice</li><li>0.25 tsp flaky sea salt</li><li>cracked pepper to taste</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Toast bread until golden</li><li>Mash avocado with lemon juice, spread on toast</li><li>Top with tomato slices</li><li>Fry eggs in olive oil to desired doneness, place on top</li><li>Finish with flaky sea salt and cracked pepper</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-7" aria-expanded="false" aria-controls="panel-7">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Zucchini Tomato Scramble with Feta"
+               data-ings='[&quot;3 large eggs&quot;, &quot;1 small zucchini diced&quot;, &quot;0.5 cup cherry tomatoes halved&quot;, &quot;2 Tbsp crumbled feta&quot;, &quot;2 Tbsp chopped fresh basil&quot;, &quot;1 Tbsp olive oil&quot;, &quot;0.25 tsp sea salt&quot;, &quot;cracked pepper to taste&quot;]'
+               aria-label="Select Zucchini Tomato Scramble with Feta" style="margin-right:6px">Zucchini Tomato Scramble with Feta
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-7" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>3 large eggs</li><li>1 small zucchini diced</li><li>0.5 cup cherry tomatoes halved</li><li>2 Tbsp crumbled feta</li><li>2 Tbsp chopped fresh basil</li><li>1 Tbsp olive oil</li><li>0.25 tsp sea salt</li><li>cracked pepper to taste</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Heat olive oil in a skillet over medium heat</li><li>Sauté zucchini 4 minutes until just tender</li><li>Add tomatoes and cook 1 minute</li><li>Whisk eggs with salt and pour into pan, scramble until just set</li><li>Top with feta, basil, and cracked pepper</li></ul>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card"><h2>
+  <button type="button" class="acc" id="acc-sec-lunches" aria-expanded="false" aria-controls="panel-sec-lunches">
+    <span class="label">Lunches</span><span class="chev">&#9658;</span>
+  </button></h2>
+  <div id="panel-sec-lunches" class="panel" hidden>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-8" aria-expanded="false" aria-controls="panel-8">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Watermelon Cucumber Feta Salad"
+               data-ings='[&quot;3 cups cubed watermelon&quot;, &quot;1 English cucumber sliced&quot;, &quot;0.5 cup crumbled feta&quot;, &quot;0.25 cup fresh mint chopped&quot;, &quot;0.25 cup thinly sliced red onion&quot;, &quot;3 Tbsp extra-virgin olive oil&quot;, &quot;1 Tbsp lime juice&quot;, &quot;0.25 tsp flaky sea salt&quot;]'
+               aria-label="Select Watermelon Cucumber Feta Salad" style="margin-right:6px">Watermelon Cucumber Feta Salad
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-8" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>3 cups cubed watermelon</li><li>1 English cucumber sliced</li><li>0.5 cup crumbled feta</li><li>0.25 cup fresh mint chopped</li><li>0.25 cup thinly sliced red onion</li><li>3 Tbsp extra-virgin olive oil</li><li>1 Tbsp lime juice</li><li>0.25 tsp flaky sea salt</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Combine watermelon, cucumber, onion, and mint in a large bowl</li><li>Whisk olive oil and lime juice and pour over salad</li><li>Toss gently and top with feta</li><li>Finish with flaky sea salt and serve chilled</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-9" aria-expanded="false" aria-controls="panel-9">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Chilled Gazpacho with White Beans"
+               data-ings='[&quot;4 large ripe tomatoes&quot;, &quot;1 red bell pepper&quot;, &quot;1 cucumber peeled&quot;, &quot;0.25 red onion&quot;, &quot;2 cloves garlic&quot;, &quot;3 Tbsp extra-virgin olive oil&quot;, &quot;2 Tbsp red wine vinegar&quot;, &quot;1 can white beans drained&quot;, &quot;0.5 tsp sea salt&quot;, &quot;2 Tbsp chopped chives&quot;]'
+               aria-label="Select Chilled Gazpacho with White Beans" style="margin-right:6px">Chilled Gazpacho with White Beans
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-9" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>4 large ripe tomatoes</li><li>1 red bell pepper</li><li>1 cucumber peeled</li><li>0.25 red onion</li><li>2 cloves garlic</li><li>3 Tbsp extra-virgin olive oil</li><li>2 Tbsp red wine vinegar</li><li>1 can white beans drained</li><li>0.5 tsp sea salt</li><li>2 Tbsp chopped chives</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Roughly chop tomatoes, pepper, cucumber, and onion</li><li>Blend with garlic, olive oil, vinegar, and salt until smooth</li><li>Chill at least 1 hour</li><li>Ladle into bowls and top with white beans and chives</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-10" aria-expanded="false" aria-controls="panel-10">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Hydrating Greek Salad with Grilled Chicken"
+               data-ings='[&quot;6 oz grilled chicken breast sliced&quot;, &quot;4 cups chopped romaine&quot;, &quot;1 cucumber diced&quot;, &quot;1 cup cherry tomatoes halved&quot;, &quot;0.25 cup kalamata olives&quot;, &quot;0.25 cup crumbled feta&quot;, &quot;0.25 cup thinly sliced red onion&quot;, &quot;3 Tbsp extra-virgin olive oil&quot;, &quot;1 Tbsp red wine vinegar&quot;, &quot;1 tsp dried oregano&quot;]'
+               aria-label="Select Hydrating Greek Salad with Grilled Chicken" style="margin-right:6px">Hydrating Greek Salad with Grilled Chicken
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-10" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>6 oz grilled chicken breast sliced</li><li>4 cups chopped romaine</li><li>1 cucumber diced</li><li>1 cup cherry tomatoes halved</li><li>0.25 cup kalamata olives</li><li>0.25 cup crumbled feta</li><li>0.25 cup thinly sliced red onion</li><li>3 Tbsp extra-virgin olive oil</li><li>1 Tbsp red wine vinegar</li><li>1 tsp dried oregano</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Combine romaine, cucumber, tomatoes, olives, and onion in a bowl</li><li>Whisk olive oil, vinegar, and oregano</li><li>Toss salad with dressing</li><li>Top with chicken and feta</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-11" aria-expanded="false" aria-controls="panel-11">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Lemon Quinoa Tabbouleh"
+               data-ings='[&quot;1 cup cooked quinoa cooled&quot;, &quot;1.5 cups fresh parsley chopped&quot;, &quot;0.5 cup fresh mint chopped&quot;, &quot;1 cup diced tomato&quot;, &quot;1 cucumber diced&quot;, &quot;3 green onions sliced&quot;, &quot;3 Tbsp extra-virgin olive oil&quot;, &quot;3 Tbsp lemon juice&quot;, &quot;1 tsp lemon zest&quot;, &quot;0.5 tsp sea salt&quot;]'
+               aria-label="Select Lemon Quinoa Tabbouleh" style="margin-right:6px">Lemon Quinoa Tabbouleh
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-11" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>1 cup cooked quinoa cooled</li><li>1.5 cups fresh parsley chopped</li><li>0.5 cup fresh mint chopped</li><li>1 cup diced tomato</li><li>1 cucumber diced</li><li>3 green onions sliced</li><li>3 Tbsp extra-virgin olive oil</li><li>3 Tbsp lemon juice</li><li>1 tsp lemon zest</li><li>0.5 tsp sea salt</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Combine quinoa, parsley, mint, tomato, cucumber, and green onions in a large bowl</li><li>Whisk olive oil, lemon juice, lemon zest, and salt</li><li>Pour dressing over salad and toss</li><li>Let sit 10 minutes for flavors to meld</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-12" aria-expanded="false" aria-controls="panel-12">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Asian Cucumber Shrimp Salad"
+               data-ings='[&quot;1 lb cooked shrimp chilled&quot;, &quot;2 English cucumbers sliced&quot;, &quot;1 cup shredded carrot&quot;, &quot;1 red bell pepper thinly sliced&quot;, &quot;2 Tbsp rice vinegar&quot;, &quot;1 Tbsp toasted sesame oil&quot;, &quot;1 Tbsp coconut aminos&quot;, &quot;1 tsp fresh grated ginger&quot;, &quot;1 Tbsp toasted sesame seeds&quot;, &quot;2 green onions sliced&quot;]'
+               aria-label="Select Asian Cucumber Shrimp Salad" style="margin-right:6px">Asian Cucumber Shrimp Salad
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-12" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>1 lb cooked shrimp chilled</li><li>2 English cucumbers sliced</li><li>1 cup shredded carrot</li><li>1 red bell pepper thinly sliced</li><li>2 Tbsp rice vinegar</li><li>1 Tbsp toasted sesame oil</li><li>1 Tbsp coconut aminos</li><li>1 tsp fresh grated ginger</li><li>1 Tbsp toasted sesame seeds</li><li>2 green onions sliced</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Whisk rice vinegar, sesame oil, coconut aminos, and ginger in a large bowl</li><li>Add cucumber, carrot, and bell pepper and toss</li><li>Top with shrimp, sesame seeds, and green onions</li><li>Chill 10 minutes before serving</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-13" aria-expanded="false" aria-controls="panel-13">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Citrus Avocado Salmon Bowl"
+               data-ings='[&quot;6 oz cooked salmon flaked&quot;, &quot;1 cup cooked brown rice&quot;, &quot;1 avocado sliced&quot;, &quot;1 orange segmented&quot;, &quot;2 cups baby arugula&quot;, &quot;0.25 cup thinly sliced radish&quot;, &quot;2 Tbsp extra-virgin olive oil&quot;, &quot;1 Tbsp lemon juice&quot;, &quot;1 Tbsp coconut aminos&quot;, &quot;1 Tbsp toasted sesame seeds&quot;]'
+               aria-label="Select Citrus Avocado Salmon Bowl" style="margin-right:6px">Citrus Avocado Salmon Bowl
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-13" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>6 oz cooked salmon flaked</li><li>1 cup cooked brown rice</li><li>1 avocado sliced</li><li>1 orange segmented</li><li>2 cups baby arugula</li><li>0.25 cup thinly sliced radish</li><li>2 Tbsp extra-virgin olive oil</li><li>1 Tbsp lemon juice</li><li>1 Tbsp coconut aminos</li><li>1 Tbsp toasted sesame seeds</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Arrange rice and arugula in a bowl as the base</li><li>Top with sections of salmon, avocado, orange, and radish</li><li>Whisk olive oil, lemon juice, and coconut aminos</li><li>Drizzle dressing over bowl and finish with sesame seeds</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-14" aria-expanded="false" aria-controls="panel-14">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Cold Soba Noodle Bowl with Edamame"
+               data-ings='[&quot;6 oz soba noodles cooked and chilled&quot;, &quot;1 cup shelled edamame&quot;, &quot;1 cucumber thinly sliced&quot;, &quot;1 carrot shredded&quot;, &quot;3 green onions sliced&quot;, &quot;2 Tbsp tahini&quot;, &quot;1 Tbsp lime juice&quot;, &quot;1 Tbsp coconut aminos&quot;, &quot;1 tsp fresh grated ginger&quot;, &quot;2 Tbsp warm water&quot;]'
+               aria-label="Select Cold Soba Noodle Bowl with Edamame" style="margin-right:6px">Cold Soba Noodle Bowl with Edamame
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-14" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>6 oz soba noodles cooked and chilled</li><li>1 cup shelled edamame</li><li>1 cucumber thinly sliced</li><li>1 carrot shredded</li><li>3 green onions sliced</li><li>2 Tbsp tahini</li><li>1 Tbsp lime juice</li><li>1 Tbsp coconut aminos</li><li>1 tsp fresh grated ginger</li><li>2 Tbsp warm water</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Whisk tahini, lime juice, coconut aminos, ginger, and warm water until smooth</li><li>Toss soba noodles with half the dressing</li><li>Top with edamame, cucumber, carrot, and green onions</li><li>Drizzle with remaining dressing and serve cold</li></ul>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card"><h2>
+  <button type="button" class="acc" id="acc-sec-dinners" aria-expanded="false" aria-controls="panel-sec-dinners">
+    <span class="label">Dinners</span><span class="chev">&#9658;</span>
+  </button></h2>
+  <div id="panel-sec-dinners" class="panel" hidden>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-15" aria-expanded="false" aria-controls="panel-15">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Lemon Garlic Shrimp Zucchini Noodles"
+               data-ings='[&quot;1 lb large shrimp peeled and deveined&quot;, &quot;4 medium zucchini spiralized&quot;, &quot;4 cloves garlic minced&quot;, &quot;3 Tbsp extra-virgin olive oil&quot;, &quot;1 lemon zested and juiced&quot;, &quot;0.5 tsp red pepper flakes&quot;, &quot;0.25 cup chopped parsley&quot;, &quot;0.25 tsp sea salt&quot;]'
+               aria-label="Select Lemon Garlic Shrimp Zucchini Noodles" style="margin-right:6px">Lemon Garlic Shrimp Zucchini Noodles
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-15" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>1 lb large shrimp peeled and deveined</li><li>4 medium zucchini spiralized</li><li>4 cloves garlic minced</li><li>3 Tbsp extra-virgin olive oil</li><li>1 lemon zested and juiced</li><li>0.5 tsp red pepper flakes</li><li>0.25 cup chopped parsley</li><li>0.25 tsp sea salt</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Heat 2 Tbsp olive oil in a large skillet over medium-high heat</li><li>Sauté garlic and pepper flakes 30 seconds</li><li>Add shrimp and cook 2 minutes per side, then remove</li><li>Add remaining oil and zucchini noodles, sauté 2-3 minutes until just tender</li><li>Return shrimp, add lemon juice and zest, toss with parsley and serve</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-16" aria-expanded="false" aria-controls="panel-16">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Grilled Mahi Mahi with Pineapple Salsa"
+               data-ings='[&quot;1.25 lb mahi mahi fillets&quot;, &quot;2 cups diced pineapple&quot;, &quot;0.5 red bell pepper diced&quot;, &quot;0.25 red onion diced&quot;, &quot;0.25 cup chopped cilantro&quot;, &quot;1 jalapeno seeded and minced&quot;, &quot;2 Tbsp lime juice&quot;, &quot;2 Tbsp extra-virgin olive oil&quot;, &quot;1 tsp ground cumin&quot;, &quot;0.5 tsp sea salt&quot;]'
+               aria-label="Select Grilled Mahi Mahi with Pineapple Salsa" style="margin-right:6px">Grilled Mahi Mahi with Pineapple Salsa
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-16" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>1.25 lb mahi mahi fillets</li><li>2 cups diced pineapple</li><li>0.5 red bell pepper diced</li><li>0.25 red onion diced</li><li>0.25 cup chopped cilantro</li><li>1 jalapeno seeded and minced</li><li>2 Tbsp lime juice</li><li>2 Tbsp extra-virgin olive oil</li><li>1 tsp ground cumin</li><li>0.5 tsp sea salt</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Combine pineapple, bell pepper, red onion, cilantro, jalapeno, and 1 Tbsp lime juice in a bowl</li><li>Rub fish with olive oil, cumin, salt, and remaining lime juice</li><li>Grill or sear in a hot skillet 4 minutes per side until fish flakes</li><li>Top with pineapple salsa and serve</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-17" aria-expanded="false" aria-controls="panel-17">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Coconut-Lime Chicken with Cucumber Slaw"
+               data-ings='[&quot;1.25 lb chicken thighs&quot;, &quot;0.5 cup full-fat coconut milk&quot;, &quot;3 Tbsp lime juice&quot;, &quot;2 cloves garlic minced&quot;, &quot;1 tsp fresh grated ginger&quot;, &quot;2 English cucumbers thinly sliced&quot;, &quot;0.25 cup chopped cilantro&quot;, &quot;2 Tbsp rice vinegar&quot;, &quot;1 Tbsp toasted sesame oil&quot;, &quot;1 cup cooked jasmine rice&quot;]'
+               aria-label="Select Coconut-Lime Chicken with Cucumber Slaw" style="margin-right:6px">Coconut-Lime Chicken with Cucumber Slaw
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-17" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>1.25 lb chicken thighs</li><li>0.5 cup full-fat coconut milk</li><li>3 Tbsp lime juice</li><li>2 cloves garlic minced</li><li>1 tsp fresh grated ginger</li><li>2 English cucumbers thinly sliced</li><li>0.25 cup chopped cilantro</li><li>2 Tbsp rice vinegar</li><li>1 Tbsp toasted sesame oil</li><li>1 cup cooked jasmine rice</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Marinate chicken in coconut milk, 2 Tbsp lime juice, garlic, and ginger for 15 minutes</li><li>Toss cucumber with rice vinegar, sesame oil, remaining lime juice, and cilantro</li><li>Sear chicken in a hot skillet 5-6 minutes per side until cooked through</li><li>Slice chicken and serve over rice with cucumber slaw</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-18" aria-expanded="false" aria-controls="panel-18">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Sheet-Pan Cod with Summer Squash"
+               data-ings='[&quot;1.25 lb cod fillets&quot;, &quot;2 medium zucchini sliced&quot;, &quot;2 medium yellow squash sliced&quot;, &quot;1 pint cherry tomatoes&quot;, &quot;3 cloves garlic minced&quot;, &quot;3 Tbsp extra-virgin olive oil&quot;, &quot;1 lemon sliced&quot;, &quot;1 tsp dried thyme&quot;, &quot;0.25 cup chopped basil&quot;]'
+               aria-label="Select Sheet-Pan Cod with Summer Squash" style="margin-right:6px">Sheet-Pan Cod with Summer Squash
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-18" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>1.25 lb cod fillets</li><li>2 medium zucchini sliced</li><li>2 medium yellow squash sliced</li><li>1 pint cherry tomatoes</li><li>3 cloves garlic minced</li><li>3 Tbsp extra-virgin olive oil</li><li>1 lemon sliced</li><li>1 tsp dried thyme</li><li>0.25 cup chopped basil</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Preheat oven to 425F</li><li>Toss zucchini, yellow squash, tomatoes, garlic, and thyme with 2 Tbsp olive oil on a sheet pan</li><li>Roast 10 minutes, then push to the sides</li><li>Add cod, brush with remaining oil, top with lemon slices, roast 12-14 minutes</li><li>Finish with fresh basil and serve</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-19" aria-expanded="false" aria-controls="panel-19">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Bone Broth Pho with Vegetables"
+               data-ings='[&quot;6 cups bone broth&quot;, &quot;1 inch fresh ginger sliced&quot;, &quot;3 star anise pods&quot;, &quot;1 cinnamon stick&quot;, &quot;2 Tbsp coconut aminos&quot;, &quot;8 oz rice noodles cooked&quot;, &quot;2 cups baby bok choy chopped&quot;, &quot;1 cup sliced mushrooms&quot;, &quot;1 lb thinly sliced grass-fed flank steak&quot;, &quot;2 green onions sliced&quot;, &quot;0.25 cup fresh basil&quot;, &quot;1 lime cut in wedges&quot;]'
+               aria-label="Select Bone Broth Pho with Vegetables" style="margin-right:6px">Bone Broth Pho with Vegetables
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-19" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>6 cups bone broth</li><li>1 inch fresh ginger sliced</li><li>3 star anise pods</li><li>1 cinnamon stick</li><li>2 Tbsp coconut aminos</li><li>8 oz rice noodles cooked</li><li>2 cups baby bok choy chopped</li><li>1 cup sliced mushrooms</li><li>1 lb thinly sliced grass-fed flank steak</li><li>2 green onions sliced</li><li>0.25 cup fresh basil</li><li>1 lime cut in wedges</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Simmer broth with ginger, star anise, cinnamon, and coconut aminos for 15 minutes</li><li>Strain broth and return to pot</li><li>Add bok choy and mushrooms, simmer 3 minutes</li><li>Divide noodles among bowls, top with raw beef slices</li><li>Pour hot broth over beef to cook through; top with green onions, basil, and lime</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-20" aria-expanded="false" aria-controls="panel-20">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Grilled Chicken Souvlaki with Tzatziki"
+               data-ings='[&quot;1.25 lb chicken breast cubed&quot;, &quot;3 Tbsp extra-virgin olive oil&quot;, &quot;2 Tbsp lemon juice&quot;, &quot;2 cloves garlic minced&quot;, &quot;1 tsp dried oregano&quot;, &quot;1 cup plain Greek yogurt&quot;, &quot;0.5 English cucumber grated and squeezed&quot;, &quot;1 Tbsp chopped dill&quot;, &quot;1 cup cherry tomatoes halved&quot;, &quot;2 whole wheat pitas&quot;]'
+               aria-label="Select Grilled Chicken Souvlaki with Tzatziki" style="margin-right:6px">Grilled Chicken Souvlaki with Tzatziki
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-20" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>1.25 lb chicken breast cubed</li><li>3 Tbsp extra-virgin olive oil</li><li>2 Tbsp lemon juice</li><li>2 cloves garlic minced</li><li>1 tsp dried oregano</li><li>1 cup plain Greek yogurt</li><li>0.5 English cucumber grated and squeezed</li><li>1 Tbsp chopped dill</li><li>1 cup cherry tomatoes halved</li><li>2 whole wheat pitas</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Marinate chicken in olive oil, lemon juice, garlic, and oregano for 15 minutes</li><li>Stir grated cucumber, dill, and a pinch of salt into yogurt</li><li>Thread chicken onto skewers and grill or pan-sear 10-12 minutes</li><li>Warm pitas and serve chicken with tzatziki and tomatoes</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-21" aria-expanded="false" aria-controls="panel-21">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Miso Glazed Salmon with Bok Choy"
+               data-ings='[&quot;1.25 lb wild salmon fillets&quot;, &quot;3 Tbsp white miso paste&quot;, &quot;1 Tbsp coconut aminos&quot;, &quot;1 Tbsp rice vinegar&quot;, &quot;1 tsp fresh grated ginger&quot;, &quot;4 heads baby bok choy halved&quot;, &quot;1 Tbsp toasted sesame oil&quot;, &quot;2 Tbsp extra-virgin olive oil&quot;, &quot;1 Tbsp toasted sesame seeds&quot;, &quot;1 cup cooked brown rice&quot;]'
+               aria-label="Select Miso Glazed Salmon with Bok Choy" style="margin-right:6px">Miso Glazed Salmon with Bok Choy
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-21" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>1.25 lb wild salmon fillets</li><li>3 Tbsp white miso paste</li><li>1 Tbsp coconut aminos</li><li>1 Tbsp rice vinegar</li><li>1 tsp fresh grated ginger</li><li>4 heads baby bok choy halved</li><li>1 Tbsp toasted sesame oil</li><li>2 Tbsp extra-virgin olive oil</li><li>1 Tbsp toasted sesame seeds</li><li>1 cup cooked brown rice</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Preheat oven to 400F</li><li>Whisk miso, coconut aminos, vinegar, ginger, and sesame oil</li><li>Brush over salmon and let sit 10 minutes</li><li>Toss bok choy with olive oil and arrange on a sheet pan with salmon</li><li>Roast 12-14 minutes until salmon flakes; top with sesame seeds and serve over rice</li></ul>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card"><h2>
+  <button type="button" class="acc" id="acc-sec-snacks" aria-expanded="false" aria-controls="panel-sec-snacks">
+    <span class="label">Snacks</span><span class="chev">&#9658;</span>
+  </button></h2>
+  <div id="panel-sec-snacks" class="panel" hidden>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-22" aria-expanded="false" aria-controls="panel-22">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Watermelon Mint Wedges with Sea Salt"
+               data-ings='[&quot;3 cups watermelon wedges&quot;, &quot;2 Tbsp chopped fresh mint&quot;, &quot;1 tsp lime juice&quot;, &quot;0.25 tsp flaky sea salt&quot;]'
+               aria-label="Select Watermelon Mint Wedges with Sea Salt" style="margin-right:6px">Watermelon Mint Wedges with Sea Salt
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-22" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>3 cups watermelon wedges</li><li>2 Tbsp chopped fresh mint</li><li>1 tsp lime juice</li><li>0.25 tsp flaky sea salt</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Arrange watermelon wedges on a plate</li><li>Drizzle with lime juice</li><li>Top with chopped mint and a small pinch of flaky sea salt</li><li>Serve chilled</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-23" aria-expanded="false" aria-controls="panel-23">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Cucumber Hummus Cups"
+               data-ings='[&quot;1 large English cucumber&quot;, &quot;0.5 cup hummus&quot;, &quot;2 Tbsp pomegranate seeds&quot;, &quot;1 Tbsp chopped parsley&quot;, &quot;0.25 tsp sumac or paprika&quot;]'
+               aria-label="Select Cucumber Hummus Cups" style="margin-right:6px">Cucumber Hummus Cups
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-23" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>1 large English cucumber</li><li>0.5 cup hummus</li><li>2 Tbsp pomegranate seeds</li><li>1 Tbsp chopped parsley</li><li>0.25 tsp sumac or paprika</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Slice cucumber into 1-inch rounds and scoop a small well in the center with a melon baller or spoon</li><li>Fill each well with hummus</li><li>Top with pomegranate seeds, parsley, and a dusting of sumac</li><li>Serve chilled</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-24" aria-expanded="false" aria-controls="panel-24">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Cottage Cheese with Sliced Peaches"
+               data-ings='[&quot;0.75 cup full-fat cottage cheese&quot;, &quot;1 ripe peach sliced&quot;, &quot;1 Tbsp chopped pecans&quot;, &quot;1 tsp honey&quot;, &quot;0.25 tsp cinnamon&quot;]'
+               aria-label="Select Cottage Cheese with Sliced Peaches" style="margin-right:6px">Cottage Cheese with Sliced Peaches
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-24" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>0.75 cup full-fat cottage cheese</li><li>1 ripe peach sliced</li><li>1 Tbsp chopped pecans</li><li>1 tsp honey</li><li>0.25 tsp cinnamon</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Spoon cottage cheese into a bowl</li><li>Top with peach slices and pecans</li><li>Drizzle with honey and dust with cinnamon</li><li>Serve immediately</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-25" aria-expanded="false" aria-controls="panel-25">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Coconut Water Berry Slushie"
+               data-ings='[&quot;1 cup coconut water&quot;, &quot;1 cup frozen mixed berries&quot;, &quot;0.5 frozen banana&quot;, &quot;1 Tbsp lime juice&quot;, &quot;1 tsp honey&quot;, &quot;0.25 cup ice&quot;]'
+               aria-label="Select Coconut Water Berry Slushie" style="margin-right:6px">Coconut Water Berry Slushie
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-25" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>1 cup coconut water</li><li>1 cup frozen mixed berries</li><li>0.5 frozen banana</li><li>1 Tbsp lime juice</li><li>1 tsp honey</li><li>0.25 cup ice</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Add all ingredients to a blender</li><li>Blend on high until slushy</li><li>Pour into a tall glass</li><li>Serve immediately</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-26" aria-expanded="false" aria-controls="panel-26">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Celery with Almond Butter and Sea Salt"
+               data-ings='[&quot;4 celery stalks cut in sticks&quot;, &quot;2 Tbsp natural almond butter&quot;, &quot;1 tsp hemp seeds&quot;, &quot;0.25 tsp flaky sea salt&quot;]'
+               aria-label="Select Celery with Almond Butter and Sea Salt" style="margin-right:6px">Celery with Almond Butter and Sea Salt
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-26" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>4 celery stalks cut in sticks</li><li>2 Tbsp natural almond butter</li><li>1 tsp hemp seeds</li><li>0.25 tsp flaky sea salt</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Arrange celery sticks on a plate</li><li>Spread or dollop almond butter along each stick</li><li>Sprinkle with hemp seeds and flaky sea salt</li><li>Serve immediately</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-27" aria-expanded="false" aria-controls="panel-27">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Frozen Grapes with Sea Salt"
+               data-ings='[&quot;2 cups seedless grapes&quot;, &quot;0.25 tsp flaky sea salt&quot;, &quot;1 tsp lime zest&quot;]'
+               aria-label="Select Frozen Grapes with Sea Salt" style="margin-right:6px">Frozen Grapes with Sea Salt
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-27" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>2 cups seedless grapes</li><li>0.25 tsp flaky sea salt</li><li>1 tsp lime zest</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Rinse grapes and pat dry</li><li>Spread on a sheet pan in a single layer and freeze 2 hours</li><li>Transfer to a bowl and toss with lime zest and a small pinch of flaky sea salt</li><li>Serve immediately</li></ul>
+  </div>
+</article>
+<article class="card-item">
+  <h3>
+    <button type="button" class="acc" id="acc-28" aria-expanded="false" aria-controls="panel-28">
+      <span class="label">
+        <input type="checkbox" class="meal-check"
+               data-name="Yogurt Cucumber Dip with Veggie Sticks"
+               data-ings='[&quot;0.75 cup plain Greek yogurt&quot;, &quot;0.5 cucumber grated and squeezed&quot;, &quot;1 clove garlic minced&quot;, &quot;1 Tbsp chopped dill&quot;, &quot;1 tsp lemon juice&quot;, &quot;1 cup carrot sticks&quot;, &quot;1 cup bell pepper strips&quot;, &quot;0.25 tsp sea salt&quot;]'
+               aria-label="Select Yogurt Cucumber Dip with Veggie Sticks" style="margin-right:6px">Yogurt Cucumber Dip with Veggie Sticks
+      </span>
+      <span class="chev">&#9658;</span>
+    </button>
+  </h3>
+  <div id="panel-28" class="panel" hidden>
+    <div class="sub">Ingredients</div>
+    <ul><li>0.75 cup plain Greek yogurt</li><li>0.5 cucumber grated and squeezed</li><li>1 clove garlic minced</li><li>1 Tbsp chopped dill</li><li>1 tsp lemon juice</li><li>1 cup carrot sticks</li><li>1 cup bell pepper strips</li><li>0.25 tsp sea salt</li></ul>
+    <div class="sub">Prep Notes / Recipe</div>
+    <ul><li>Stir yogurt, cucumber, garlic, dill, lemon juice, and salt together</li><li>Chill 10 minutes to let flavors meld</li><li>Serve with carrot and bell pepper sticks</li></ul>
+  </div>
+</article>
+  </div>
+</section>
+<section class="card"><h2>
+  <button type="button" class="acc" id="acc-shopping" aria-expanded="false" aria-controls="panel-shopping">
+    <span class="label">Weekly Shopping List</span><span class="chev">&#9658;</span>
+  </button></h2>
+  <div id="panel-shopping" class="panel" hidden>
+    <div class="group"><h3>Selected Meals -- Shopping List</h3>
+      <div class="shopping-dynamic"><p class="sub">Select meals to build your grocery list.</p></div>
+    </div>
+    <hr style="border:none;border-top:1px solid rgba(0,0,0,.08);margin:12px 0;">
+  </div>
+</section>
+<script>
+// ---- Accordion --------------------------------------------------------------
+document.querySelectorAll('.acc').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    var panelId  = btn.getAttribute('aria-controls');
+    var panel    = document.getElementById(panelId);
+    btn.setAttribute('aria-expanded', String(!expanded));
+    if (panel) { panel.hidden = expanded; }
+  });
+});
+
+// ---- Helpers ----------------------------------------------------------------
+function escText(str) {
+  var d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+// Build shopping list using DOM methods to avoid XSS from untrusted data
+function buildShoppingList(selectedItems) {
+  var container = document.querySelector('.shopping-dynamic');
+  if (!container) return;
+
+  // Clear existing content safely
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+
+  if (selectedItems.length === 0) {
+    var p = document.createElement('p');
+    p.className = 'sub';
+    p.textContent = 'Select meals to build your grocery list.';
+    container.appendChild(p);
+    return;
+  }
+
+  selectedItems.forEach(function(item) {
+    var group = document.createElement('div');
+    group.className = 'group';
+
+    var heading = document.createElement('h3');
+    heading.textContent = item.name;
+    group.appendChild(heading);
+
+    var ul = document.createElement('ul');
+    item.ingredients.forEach(function(ing) {
+      var li = document.createElement('li');
+      li.textContent = ing;
+      ul.appendChild(li);
+    });
+    group.appendChild(ul);
+    container.appendChild(group);
+  });
+}
+
+// ---- Shopping list update ---------------------------------------------------
+function updateShoppingList() {
+  var checked = document.querySelectorAll('.meal-check:checked');
+  var selectedItems = [];
+  checked.forEach(function(cb) {
+    var name = cb.dataset.name || '';
+    var ings = [];
+    try {
+      var raw = cb.dataset.ings || '[]';
+      ings = JSON.parse(raw);
+    } catch(e) { ings = []; }
+    selectedItems.push({ name: name, ingredients: ings });
+  });
+  buildShoppingList(selectedItems);
+}
+
+document.querySelectorAll('.meal-check').forEach(function(cb) {
+  cb.addEventListener('change', updateShoppingList);
+});
+
+// ---- Reset ------------------------------------------------------------------
+document.getElementById('resetBtn').addEventListener('click', function() {
+  if (!confirm('Clear all selections?')) return;
+  document.querySelectorAll('.meal-check').forEach(function(cb) { cb.checked = false; });
+  updateShoppingList();
+});
+
+// ---- Download ---------------------------------------------------------------
+document.getElementById('dlBtn').addEventListener('click', function() {
+  var blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'meal-plan.html';
+  a.click();
+});
+</script>
+</div></body></html>
